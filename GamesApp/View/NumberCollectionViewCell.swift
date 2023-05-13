@@ -9,8 +9,12 @@ import UIKit
 
 class NumberCollectionViewCell: UICollectionViewCell {
  
-    var numberView: UIView!
+    // Views
+    
+    var numberView : UIView!
     var numberLabel: UILabel!
+    
+    // ---------------------------------------------
     
     override init(frame: CGRect) {
         
@@ -22,15 +26,11 @@ class NumberCollectionViewCell: UICollectionViewCell {
         
     }
     
-    override var isSelected: Bool {
-        
-        didSet {
-            
-            numberView.backgroundColor = isSelected ? .black : .red
-            
-        }
-        
-    }
+    // ---------------------------------------------
+    
+    /*
+     *  Initialize
+     */
     
     func initialize(){
         
@@ -41,27 +41,48 @@ class NumberCollectionViewCell: UICollectionViewCell {
         // Create Number Label
         
         self.createNumberLabel()
+        
     }
+    
+    // ---------------------------------------------
+    
+    /*
+     *  Create Number View
+     */
     
     func createNumberView(){
         
-        self.numberView                = UIView()
-        numberView.backgroundColor     = .red
+        // Create Number View
+        
+        self.numberView                = UIView(frame: CGRect(x: 0, y: 0, width: 80, height: 80))
+        numberView.backgroundColor     = .clear
         numberView.layer.masksToBounds = false
         numberView.clipsToBounds       = true
         numberView.layer.cornerRadius  = 40
         
         self.addSubview(numberView)
         
-        numberView.translatesAutoresizingMaskIntoConstraints                      = false
-        numberView.widthAnchor.constraint(equalToConstant: 80).isActive           = true
-        numberView.heightAnchor.constraint(equalToConstant: 80).isActive          = true
-        numberView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        numberView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        // Create Blur Effect
         
+        let blurEffect = UIBlurEffect(style: .regular)
+        let blurView   = UIVisualEffectView(effect: blurEffect)
+        blurView.frame = numberView.frame
+        blurView.layer.cornerRadius = 15
+        blurView.clipsToBounds = true
+        
+        numberView.addSubview(blurView)
+  
     }
     
+    // ---------------------------------------------
+    
+    /*
+     *  Create Number Label
+     */
+    
     func createNumberLabel(){
+        
+        // Create Number Label
         
         self.numberLabel = UILabel()
         numberLabel.text = "10"
@@ -70,8 +91,10 @@ class NumberCollectionViewCell: UICollectionViewCell {
         
         numberView.addSubview(numberLabel)
         
+        // Number Label Constraints
+        
         numberLabel.translatesAutoresizingMaskIntoConstraints                            = false
-        numberLabel.centerXAnchor.constraint(equalTo: numberView.centerXAnchor).isActive  = true
+        numberLabel.centerXAnchor.constraint(equalTo: numberView.centerXAnchor).isActive = true
         numberLabel.centerYAnchor.constraint(equalTo: numberView.centerYAnchor).isActive = true
         
     }
