@@ -2,6 +2,8 @@ YMGK Dersi Vize Proje Ödevi
 
 Proje, Swift dili ile Programatik olarak kodlanmıştır.
 
+Tanıtım Video Linki : https://www.youtube.com/watch?v=xTtPyQBCoqg
+
 Proje Kartı:
 
 <img width="698" alt="Ekran Resmi 2023-05-21 14 53 44" src="https://github.com/sukruozkocaa/GamesApp/assets/85077754/f2d8eecb-c04f-4301-b1c6-c6bc8055fcc3">
