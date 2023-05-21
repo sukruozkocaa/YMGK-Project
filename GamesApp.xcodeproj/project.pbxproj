@@ -11,7 +11,16 @@
 		354A6B3429DA30650023F934 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354A6B3329DA30650023F934 /* SceneDelegate.swift */; };
 		354A6B3629DA30650023F934 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354A6B3529DA30650023F934 /* ViewController.swift */; };
 		354A6B3B29DA30660023F934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 354A6B3A29DA30660023F934 /* Assets.xcassets */; };
+		713E4A392A18D62E004F698B /* PerfectSquareNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713E4A382A18D62E004F698B /* PerfectSquareNumberViewController.swift */; };
+		713E4A3B2A18D648004F698B /* PerfectSquareNumberWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713E4A3A2A18D648004F698B /* PerfectSquareNumberWebViewController.swift */; };
+		713E4A3E2A18D87E004F698B /* PrimeNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713E4A3D2A18D87E004F698B /* PrimeNumberViewController.swift */; };
+		713E4A412A18D88D004F698B /* TeachPrimeNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713E4A402A18D88D004F698B /* TeachPrimeNumberViewController.swift */; };
+		713E4A432A18D899004F698B /* PrimeNumberWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713E4A422A18D899004F698B /* PrimeNumberWebViewController.swift */; };
 		714472FE2A0B056D00C658A1 /* NumberCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714472FD2A0B056D00C658A1 /* NumberCollectionViewCell.swift */; };
+		7154CBE72A18343400AC4015 /* MultiplesOfNumbersWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7154CBE62A18343400AC4015 /* MultiplesOfNumbersWebViewViewController.swift */; };
+		7154CBEA2A18380300AC4015 /* TeachPerfectSquareNumberViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7154CBE92A18380300AC4015 /* TeachPerfectSquareNumberViewControllerViewController.swift */; };
+		71A566682A159654002EE9F7 /* MultiplesOfNumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A566672A159654002EE9F7 /* MultiplesOfNumbersViewController.swift */; };
+		71A5666B2A159890002EE9F7 /* TeachMuutiplesOfNumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A5666A2A159890002EE9F7 /* TeachMuutiplesOfNumbersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +30,16 @@
 		354A6B3529DA30650023F934 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		354A6B3A29DA30660023F934 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		354A6B3F29DA30660023F934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		713E4A382A18D62E004F698B /* PerfectSquareNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfectSquareNumberViewController.swift; sourceTree = "<group>"; };
+		713E4A3A2A18D648004F698B /* PerfectSquareNumberWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfectSquareNumberWebViewController.swift; sourceTree = "<group>"; };
+		713E4A3D2A18D87E004F698B /* PrimeNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeNumberViewController.swift; sourceTree = "<group>"; };
+		713E4A402A18D88D004F698B /* TeachPrimeNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachPrimeNumberViewController.swift; sourceTree = "<group>"; };
+		713E4A422A18D899004F698B /* PrimeNumberWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeNumberWebViewController.swift; sourceTree = "<group>"; };
 		714472FD2A0B056D00C658A1 /* NumberCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCollectionViewCell.swift; sourceTree = "<group>"; };
+		7154CBE62A18343400AC4015 /* MultiplesOfNumbersWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplesOfNumbersWebViewViewController.swift; sourceTree = "<group>"; };
+		7154CBE92A18380300AC4015 /* TeachPerfectSquareNumberViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachPerfectSquareNumberViewControllerViewController.swift; sourceTree = "<group>"; };
+		71A566672A159654002EE9F7 /* MultiplesOfNumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplesOfNumbersViewController.swift; sourceTree = "<group>"; };
+		71A5666A2A159890002EE9F7 /* TeachMuutiplesOfNumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeachMuutiplesOfNumbersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,7 @@
 		354A6B3029DA30650023F934 /* GamesApp */ = {
 			isa = PBXGroup;
 			children = (
+				71A566662A1595DC002EE9F7 /* Resources */,
 				714472FC2A0B053200C658A1 /* Extension */,
 				714472FB2A0B052A00C658A1 /* Model */,
 				714472FA2A0B052100C658A1 /* View */,
@@ -63,9 +82,38 @@
 			path = GamesApp;
 			sourceTree = "<group>";
 		};
+		713E4A372A18D610004F698B /* Teach */ = {
+			isa = PBXGroup;
+			children = (
+				7154CBE92A18380300AC4015 /* TeachPerfectSquareNumberViewControllerViewController.swift */,
+			);
+			path = Teach;
+			sourceTree = "<group>";
+		};
+		713E4A3C2A18D85C004F698B /* Prime Number */ = {
+			isa = PBXGroup;
+			children = (
+				713E4A3F2A18D881004F698B /* Teach */,
+				713E4A3D2A18D87E004F698B /* PrimeNumberViewController.swift */,
+				713E4A422A18D899004F698B /* PrimeNumberWebViewController.swift */,
+			);
+			path = "Prime Number";
+			sourceTree = "<group>";
+		};
+		713E4A3F2A18D881004F698B /* Teach */ = {
+			isa = PBXGroup;
+			children = (
+				713E4A402A18D88D004F698B /* TeachPrimeNumberViewController.swift */,
+			);
+			path = Teach;
+			sourceTree = "<group>";
+		};
 		714472F92A0B051B00C658A1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				713E4A3C2A18D85C004F698B /* Prime Number */,
+				7154CBE82A1837D800AC4015 /* Perfect Square Number */,
+				7154CBE52A1833F900AC4015 /* MultiplesOfNumbers */,
 				354A6B3529DA30650023F934 /* ViewController.swift */,
 			);
 			path = Controller;
@@ -89,11 +137,46 @@
 		714472FC2A0B053200C658A1 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		7154CBE52A1833F900AC4015 /* MultiplesOfNumbers */ = {
+			isa = PBXGroup;
+			children = (
+				71A566672A159654002EE9F7 /* MultiplesOfNumbersViewController.swift */,
+				7154CBE62A18343400AC4015 /* MultiplesOfNumbersWebViewViewController.swift */,
+				71A566692A159879002EE9F7 /* Teach */,
+			);
+			path = MultiplesOfNumbers;
+			sourceTree = "<group>";
+		};
+		7154CBE82A1837D800AC4015 /* Perfect Square Number */ = {
+			isa = PBXGroup;
+			children = (
+				713E4A372A18D610004F698B /* Teach */,
+				713E4A382A18D62E004F698B /* PerfectSquareNumberViewController.swift */,
+				713E4A3A2A18D648004F698B /* PerfectSquareNumberWebViewController.swift */,
+			);
+			path = "Perfect Square Number";
+			sourceTree = "<group>";
+		};
+		71A566662A1595DC002EE9F7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				354A6B3329DA30650023F934 /* SceneDelegate.swift */,
 				354A6B3129DA30650023F934 /* AppDelegate.swift */,
 				354A6B3A29DA30660023F934 /* Assets.xcassets */,
 			);
-			path = Extension;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		71A566692A159879002EE9F7 /* Teach */ = {
+			isa = PBXGroup;
+			children = (
+				71A5666A2A159890002EE9F7 /* TeachMuutiplesOfNumbersViewController.swift */,
+			);
+			path = Teach;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,9 +249,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				354A6B3629DA30650023F934 /* ViewController.swift in Sources */,
+				71A566682A159654002EE9F7 /* MultiplesOfNumbersViewController.swift in Sources */,
+				713E4A392A18D62E004F698B /* PerfectSquareNumberViewController.swift in Sources */,
+				713E4A432A18D899004F698B /* PrimeNumberWebViewController.swift in Sources */,
+				713E4A3E2A18D87E004F698B /* PrimeNumberViewController.swift in Sources */,
 				714472FE2A0B056D00C658A1 /* NumberCollectionViewCell.swift in Sources */,
+				7154CBEA2A18380300AC4015 /* TeachPerfectSquareNumberViewControllerViewController.swift in Sources */,
+				71A5666B2A159890002EE9F7 /* TeachMuutiplesOfNumbersViewController.swift in Sources */,
 				354A6B3229DA30650023F934 /* AppDelegate.swift in Sources */,
+				7154CBE72A18343400AC4015 /* MultiplesOfNumbersWebViewViewController.swift in Sources */,
+				713E4A412A18D88D004F698B /* TeachPrimeNumberViewController.swift in Sources */,
 				354A6B3429DA30650023F934 /* SceneDelegate.swift in Sources */,
+				713E4A3B2A18D648004F698B /* PerfectSquareNumberWebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

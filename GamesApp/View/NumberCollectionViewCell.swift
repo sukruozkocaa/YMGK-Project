@@ -13,6 +13,7 @@ class NumberCollectionViewCell: UICollectionViewCell {
     
     var numberView : UIView!
     var numberLabel: UILabel!
+    var blurView   : UIVisualEffectView!
     
     // ---------------------------------------------
     
@@ -59,16 +60,18 @@ class NumberCollectionViewCell: UICollectionViewCell {
         numberView.layer.masksToBounds = false
         numberView.clipsToBounds       = true
         numberView.layer.cornerRadius  = 40
+        numberView.layer.borderWidth   = 0.8
+        numberView.layer.borderColor   = UIColor.systemGray.cgColor
         
         self.addSubview(numberView)
         
         // Create Blur Effect
         
-        let blurEffect = UIBlurEffect(style: .regular)
-        let blurView   = UIVisualEffectView(effect: blurEffect)
-        blurView.frame = numberView.frame
+        let blurEffect              = UIBlurEffect(style: .regular)
+        blurView                    = UIVisualEffectView(effect: blurEffect)
+        blurView.frame              = numberView.frame
         blurView.layer.cornerRadius = 15
-        blurView.clipsToBounds = true
+        blurView.clipsToBounds      = true
         
         numberView.addSubview(blurView)
   
@@ -87,7 +90,7 @@ class NumberCollectionViewCell: UICollectionViewCell {
         self.numberLabel = UILabel()
         numberLabel.text = "10"
         numberLabel.font = UIFont.systemFont(ofSize: 15, weight: .bold)
-        numberLabel.textColor = UIColor.white
+        numberLabel.textColor = UIColor.black
         
         numberView.addSubview(numberLabel)
         
@@ -99,8 +102,12 @@ class NumberCollectionViewCell: UICollectionViewCell {
         
     }
     
+    // Required Init
+    
     required init?(coder: NSCoder) {
+        
         fatalError("init(coder:) has not been implemented")
+        
     }
     
     

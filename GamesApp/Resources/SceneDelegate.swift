@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window                        = UIWindow(windowScene: scene)
         let navController                 = UINavigationController()
-        let viewController                = ViewController()
+        let viewController                = TeachMuutiplesOfNumbersViewController()
 
         navController.viewControllers     = [viewController]
         window.rootViewController         = navController

@@ -20,10 +20,10 @@ class ViewController: UIViewController {
     var infoLabel      : UILabel!
     var pointLabel     : UILabel!
     
-    var statusView       : UIView!
-    var coefficientLabel : UILabel!
-    var perfectSquareNumberLabel: UILabel!
-    var primeNumberLabel: UILabel!
+    var statusView                : UIView!
+    var coefficientLabel          : UILabel!
+    var perfectSquareNumberLabel  : UILabel!
+    var primeNumberLabel          : UILabel!
     
     // ---------------------------------------------
     
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
      *  Vars
      */
 
-    var numberArray = [10,12,18,22,25,36,45,56,63,71,83,90]
+    var numberArray : [Int] = []
     var point: Int  = 0
 
     // ---------------------------------------------
@@ -55,26 +55,51 @@ class ViewController: UIViewController {
      */
     
     func initialize(){
-                
-        // Create ImageView
         
-        self.createImageView()
+        // Prepare Number Data
         
-        // Create CollectionView
+        self.prepareNumberData(completion: {
+            
+            // Create ImageView
+            
+            self.createImageView()
+            
+            // Create CollectionView
 
-        self.createCollectionView()
+            self.createCollectionView()
+            
+            // Create Info View
+            
+            self.createInfoView()
+            
+            // Create Point Label
+            
+            self.createPointLabel()
+            
+            // Create Status View
+            
+            self.createStatusView()
+        })
+            
+    }
+    
+    // ---------------------------------------------
+    
+    /*
+     *  Prepare Number Data
+     */
+    
+    func prepareNumberData(completion: (() -> Void)? = nil){
         
-        // Create Info View
+        for _ in 0...11{
+            
+            let randomInt = Int.random(in: 0..<100)
+
+            self.numberArray.append(randomInt)
+            
+        }
         
-        self.createInfoView()
-        
-        // Create Point Label
-        
-        self.createPointLabel()
-        
-        // Create Status View
-        
-        self.createStatusView()
+        completion?()
         
     }
     
@@ -117,6 +142,7 @@ class ViewController: UIViewController {
         collectionView.collectionViewLayout = flowLayout
         collectionView.backgroundColor      = .clear
         collectionView.contentInset         = UIEdgeInsets(top: 50, left: 20, bottom: 0, right: 20)
+        collectionView.isScrollEnabled      = false
         
         collectionView.register(NumberCollectionViewCell.self, forCellWithReuseIdentifier: "Number")
         
@@ -360,7 +386,8 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-                    
+                   
+        
         UIView.animate(withDuration: 0.5) {
             
             self.statusView.layer.opacity = 1
@@ -368,6 +395,8 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         }
         
         let cell = collectionView.cellForItem(at: indexPath) as? NumberCollectionViewCell
+        
+        cell?.isUserInteractionEnabled = false
         
         if numberArray[indexPath.row] % 9 == 0 {
             
@@ -425,12 +454,13 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         }else {
             
             self.statusView.layer.borderColor = UIColor.red.cgColor
-            
+            cell?.numberView.layer.borderWidth = 1
+            cell?.numberView.layer.borderColor = UIColor.systemRed.cgColor
             cell?.numberView.isHidden = false
             
         }
         
-        
+
     }
         
 }
