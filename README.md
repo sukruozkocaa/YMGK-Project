@@ -8,6 +8,22 @@ Proje Kartı:
 
 
 
+https://github.com/user-attachments/assets/a60b3466-9b0f-44a7-87c9-c4dd155eba87
+
+
+
+https://github.com/user-attachments/assets/66687f23-3795-4e08-874e-693d5d6ab0b4
+
+
+
+https://github.com/user-attachments/assets/1035043f-32df-482d-bd79-592bc07e243a
+
+
+
+https://github.com/user-attachments/assets/61cc61c6-56ca-4d08-ace4-b93e36e8b8da
+
+
+
 https://github.com/user-attachments/assets/bf1f7924-f8f7-48ce-9075-530403f7d27f
 
 
