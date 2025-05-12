@@ -6,6 +6,12 @@ Tanıtım Video Linki : https://www.youtube.com/watch?v=xTtPyQBCoqg
 
 Proje Kartı:
 
+
+
+https://github.com/user-attachments/assets/a9229b44-c6b8-43d8-a440-06a4ee84056a
+
+
+
 <img width="698" alt="Ekran Resmi 2023-05-21 14 53 44" src="https://github.com/sukruozkocaa/GamesApp/assets/85077754/f2d8eecb-c04f-4301-b1c6-c6bc8055fcc3">
 
 Uygulama Ekran Görüntüleri: 
